@@ -13,7 +13,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     if (!name || !email || !message) {
         alert('Please fill out all fields.');
-        event.preventDefault(); // Prevent form from submitting
+        event.preventDefault();
     } else if (!email.includes('@')) {
         alert('Please enter a valid email address.');
         event.preventDefault();
